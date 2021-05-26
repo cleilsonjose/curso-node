@@ -28,7 +28,9 @@ var soma = function(a,b){
 module.exports = soma;
 ```
 
-```
+Arquivo calc.js:
+
+``` 
 var Somafunc= require("./soma");
 
 console.log(`soma = ${Somafunc(1,2)}`);
