@@ -19,22 +19,22 @@ Módulo é dividir sua aplicação em partes.
 
 Arquivo soma.js:
 
-```
+~~~javascript
 var soma = function(a,b){
 	return a + b;
 }
 
 
 module.exports = soma;
-```
+~~~
 
 Arquivo calc.js:
 
-``` 
+~~~javascript
 var Somafunc= require("./soma");
 
 console.log(`soma = ${Somafunc(1,2)}`);
-```
+~~~~
 
 
 
