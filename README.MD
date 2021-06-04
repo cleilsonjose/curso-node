@@ -54,6 +54,25 @@ yarn add express
 
 
 
+## Rotas 
+
+Rotas são os caminhos da nossa aplicação, ex:
+
+~~~javascript
+const express = require('express');
+const app = express();
+
+app.get('/sobre', function(req, res) {
+  res.send('sobre')
+});
+
+app.listen(3000, function(){
+  console.log('listening on http://localhost:3000');
+});
+~~~
+
+
+
 
 
 
