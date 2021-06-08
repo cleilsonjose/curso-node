@@ -9,6 +9,11 @@ app.get('/sobre', function(req, res) {
   res.send('sobre')
 });
 
-app.listen(3000, function(){
-  console.log('listening on http://localhost:3000');
+app.get('/ola/:cargo/:nome', function(req, res) {
+  res.send("<h1>Olá "+req.params.nome+"</h1>");
 });
+
+
+
+
+app.listen(8000, function(){console.log('listening on http://localhost:8000');});

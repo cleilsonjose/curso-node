@@ -73,7 +73,31 @@ app.listen(3000, function(){
 
 
 
+## Parâmetros 
 
+Parâmetros são informações que são passadas através das rotas, a qual será utilizada para realizar alguma ação, por exemplo jogar os dados para o banco de dados.
+
+~~~javascript
+app.get('/ola/:nome', function(req, res) {
+  res.send("<h1>Olá "+ req.params +"</h1>");
+});
+~~~
+
+Pode pegar um parâmetro especifico:
+
+~~~javascript
+app.get('/ola/:cargo/:nome', function(req, res) {
+  res.send("<h1>Olá "+req.params.nome+"</h1>");
+});
+~~~
+
+Pode ser opcional, é só colocar um '?' na frente do parâmetro :
+
+~~~javascript
+app.get('/ola/:nome/:sobrenome?', function(req, res) {
+  res.send("<h1>Olá "+req.params.nome+"</h1>");
+});
+~~~
 
 
 
